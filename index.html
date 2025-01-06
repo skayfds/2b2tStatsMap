@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abrir URL múltiple vez a la vez</title>
+    <title>Abrir URL múltiples veces</title>
     <script>
+        // Esta función se ejecuta cuando el usuario hace clic en el botón
+        function abrirURLs() {
+            var url = "https://www.youtube.com"; // URL que deseas abrir
+            var veces = 5; // Número de veces que deseas abrir la URL (modificable aquí)
 
-        window.onload = function() {
-            var url = "https://www.youtube.com";
-            var veces = 5; 
-
+            // Abre la URL la cantidad de veces indicada
             for (var i = 0; i < veces; i++) {
                 window.open(url, '_blank');
             }
@@ -17,7 +18,8 @@
     </script>
 </head>
 <body>
-    <h1>Abriendo URL múltiples veces a la vez...</h1>
-    <p>Por favor espera mientras se abren las pestañas.</p>
+    <h1>Abrir URL múltiples veces a la vez</h1>
+    <p>Haz clic en el siguiente botón para abrir la URL varias veces en nuevas pestañas:</p>
+    <button onclick="abrirURLs()">Abrir URL</button>
 </body>
 </html>
